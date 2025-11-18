@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tasty Hub</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+            <!-- Favicon -->
+        <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+
+    /* Add this to your existing mobile responsive section */
+@media (max-width: 767.98px) {
+    .col-lg-6 h1 {
+        font-size: 1.75rem !important;
+    }
+    
+    .col-lg-6 h1 img {
+        width: 45px !important;
+        height: 45px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .col-lg-6 h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    .col-lg-6 h1 img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+}
+    .dropdown-menu {
+        right: 0; /* Aligns the dropdown menu to the right */
+        left: auto; /* Prevents the left alignment */
+    }
+    .big-icon {
+        font-size: 25px;
+    }
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.float-end {
+    margin-top: 5px;
+}
+/* Target only About Us paragraphs with mb-4 */
+.col-lg-6 p.mb-4 {
+    font-size: 1.2rem !important;  /* bigger text */
+    line-height: 1.6 !important;   /* better spacing */
+}
+
+
+
+</style>
+<body class="bg-white">
+           <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.php" class="navbar-brand p-0">
+                    <h2 class="text-primary m-0"><img src="img/logo_new.png" alt="Logo" style="width: 50px; height: 50px;"></i>Tasty Hub</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.php" class="nav-item nav-link">Home</a>
+                        <a href="guestdashboard.php" class="nav-item nav-link">Browse</a>
+                        <a href="guestabout.html" class="nav-item nav-link active">About</a>
+                        </div>
+                        <a href="signin.php" class="btn btn-primary py-2 px-4">SIGN IN</a>
+
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="container-fluid py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+        
+
+             <!-- About Start -->
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="row g-3">
+                                <div class="col-6 text-start">
+                                    <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
+                                </div>
+                                <div class="col-6 text-start">
+                                    <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%;">
+                                </div>
+                                <div class="col-6 text-end">
+                                    <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                                </div>
+                                <div class="col-6 text-end">
+                                    <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                          <h1 class="mb-4">
+                            Welcome to <img src="img/logo_new.png" alt="Logo" style="width: 65px; height: 65px;"><span class="text-primary">Tasty Hub </span>
+                          </h1>
+                          <p class="mb-4">
+                            At <strong>Tasty Hub</strong>, we believe food is more than just a meal—it’s an experience meant to be shared. Our community is a gathering place for home cooks, food lovers, and curious taste adventurers from around the world. Whether you’re whipping up a quick snack, perfecting a family classic, or experimenting with new flavors, you’ll find inspiration, support, and a whole lot of delicious ideas right here.
+                          </p>
+                          <p class="mb-4">
+                            Tasty Hub makes cooking fun, easy, and stress-free. Explore thousands of recipes tailored to your cravings, dietary needs, or special occasions. From <em>weeknight dinners</em> to <em>holiday feasts</em> to <em>sweet treats</em>, our smart search tools and personalized recommendations ensure you’ll always find the perfect dish. More than just recipes, we’re about connection—sharing stories, tips, and creativity to bring people closer together, one bite at a time.
+                          </p>
+                          <p class="mb-4">
+                            So grab your apron, join our community, and let’s cook, share, and celebrate food together. Welcome home to Tasty Hub—where every recipe starts a new story. 🍽️✨
+                          </p>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+
+
+<!-- Feedback Form Start -->
+<div class="container-fluid py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="row g-0 align-items-stretch">
+    
+    <!-- Feedback Form -->
+    <div class="col-md-6 bg-dark d-flex align-items-center">
+      <div class="p-5 wow fadeInUp w-100" data-wow-delay="0.2s">
+        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Feedback</h5>
+        <h1 class="text-white mb-4">We Value Your Opinion</h1>
+        <form id="feedbackForm" action="submit_feedback.php" method="POST">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                <label for="name">Your Name</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                <label for="email">Your Email</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-floating">
+                <textarea class="form-control" name="message" id="message" rows="4" placeholder="Write your message..." required></textarea>
+                <label for="message">Your Feedback</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary w-100 py-3" type="submit">Submit Feedback</button>
+            </div>
+          </div>
+        </form>
+        <div id="feedbackMessage" class="text-white mt-3" style="display: none;"></div>
+      </div>
+    </div>
+
+    <!-- GIF Section -->
+<div class="col-md-6 d-none d-md-flex align-items-stretch">
+      <div class="video-container w-100 h-100">
+        <img src="img/aboutvideo.gif" alt="Animated About" class="img-fluid w-100 h-100" style="object-fit: cover;">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Team Start -->
+<div class="container-xl pt-5 pb-3 bg-white">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h3 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h3>
+      <h1 class="mb-5">Our Developers</h1>
+    </div>
+    
+    <div class="row g-4 justify-content-center">
+      <!-- Member 1 -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="team-item text-center rounded overflow-hidden">
+          <div class="rounded-circle overflow-hidden m-5">
+            <img class="img-fluid" src="img/Althea.jpg" alt="Althea">
+          </div>
+          <h5 class="mb-0">Althea Benedictos</h5>
+          <small>Programmer</small>
+          <div class="d-flex justify-content-center mt-3">
+            <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/profile.php?id=61578344467884"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="https://twitter.com/theabenedictos"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/theabenedictos"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.7s">
+        <div class="team-item text-center rounded overflow-hidden">
+          <div class="rounded-circle overflow-hidden m-5">
+            <img class="img-fluid" src="img/Chailes.jpg" alt="Chailes">
+          </div>
+          <h5 class="mb-0">Christine Chailes Reyes</h5>
+          <small>Programmer</small>
+          <div class="d-flex justify-content-center mt-3">
+            <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/profile.php?id=61577891354612"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="https://twitter.com/zmfltmxls0v0"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/christineee_rys"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- Team End -->
+
+
+         <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-3 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-2">
+            <div class="row g-2">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                    <a class="btn btn-link" href="guestabout.html">About Us</a>
+                <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#legalModal" data-tab="privacy">Privacy Policy</a>
+                <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#legalModal" data-tab="terms">Terms & Conditions</a>
+                </div>
+
+                 <div class="col-lg-6 col-md-12 text-center">
+                    <h1 class="text-primary" style="font-size: 5rem; font-weight: extrabold; letter-spacing: 3px;">Tasty Hub</h1>
+                    <p class="section-title text-center text-white fw-normal"> Discover. Create. Share.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bulacan, Philippines</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>tastyhubrecipe@gmail.com</p>
+
+                        <!--
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-8 text-center text-md-start mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Tasty Hub</a>, All Right Reserved. 
+                        Designed By <a class="border-bottom" href="guestabout.html">Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+<!-- Legal Modal -->
+<div class="modal fade" id="legalModal" tabindex="-1" aria-labelledby="legalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+
+      <div class="modal-header border-bottom-0 flex-column flex-sm-row align-items-stretch p-0">
+        <ul class="nav nav-tabs w-100 flex-column flex-sm-row text-center" id="legalTabs" role="tablist">
+          <li class="nav-item flex-fill">
+            <button class="nav-link active w-100" id="privacy-tab" data-bs-toggle="tab" data-bs-target="#privacy" type="button" role="tab" aria-controls="privacy" aria-selected="true">
+              Privacy Policy
+            </button>
+          </li>
+          <li class="nav-item flex-fill">
+            <button class="nav-link w-100" id="terms-tab" data-bs-toggle="tab" data-bs-target="#terms" type="button" role="tab" aria-controls="terms" aria-selected="false">
+              Terms & Conditions
+            </button>
+          </li>
+        </ul>
+        <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body tab-content overflow-auto" style="max-height:70vh;">
+        
+        <!-- Privacy Tab -->
+        <div class="tab-pane fade show active" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+          <h6 class="text-muted">Effective Date: April 10, 2025</h6>
+                <p>Welcome to Tasty Hub, a community-driven recipe-sharing website. Your privacy is important to us, and this Privacy Policy outlines how we collect, use, disclose, and protect your information when you use our services.</p>
+                
+                <h6>1. Information We Collect</h6>
+                <p>At Tasty Hub, we practice data minimization and only collect essential information needed to provide our services:</p>
+                <p><strong>Personal Information:</strong><br>
+                - <strong>Username:</strong> Your unique identifier on our platform, enabling you to create and manage recipes, interact with other users, and build your culinary profile within our community.<br>
+                - <strong>Email Address:</strong> Used exclusively for essential communications including account verification, password recovery, important service updates, and optional community newsletters (which you can unsubscribe from at any time).</p>
+                <p><strong>Automatically Collected Information:</strong><br>
+                - <strong>Usage Data:</strong> We collect information about how you interact with our platform, including pages visited, time spent, and features used to improve user experience.<br>
+                - <strong>Technical Data:</strong> IP address, browser type, device information, and operating system for security purposes and platform optimization.<br>
+                - <strong>Cookies:</strong> We use essential cookies for site functionality and optional analytics cookies (with your consent) to understand user preferences and improve our services.</p>
+
+                <h6>2. User-Generated Content</h6>
+                <p>Your creative contributions are the heart of Tasty Hub's community. When you submit recipes, you maintain ownership of your content while granting us specific rights for platform operation:</p>
+                <p>- <strong>Content Ownership:</strong> You retain full ownership and copyright of all recipes, images, and content you create.<br>
+                - <strong>Platform License:</strong> By submitting content, you grant Tasty Hub a non-exclusive, worldwide, royalty-free license to use, reproduce, modify, and display your content on our platform and in promotional materials.<br>
+                - <strong>Future Publications:</strong> We may feature selected community recipes in cookbooks or other publications. If your recipe is chosen, we will notify you in advance, provide proper attribution, and may offer compensation for featured content.<br>
+                - <strong>Content Responsibility:</strong> You are responsible for ensuring your submitted content is original, accurate, and does not infringe on others' intellectual property rights.</p>
+
+                <h6>3. How We Use Your Information</h6>
+                <p>We use collected information solely for legitimate business purposes to enhance your Tasty Hub experience:</p>
+                <p><strong>Core Services:</strong><br>
+                - Account creation, management, and authentication<br>
+                - Recipe submission, editing, and deletion capabilities<br>
+                - Community features including comments, ratings, and user interactions<br>
+                - Content moderation through our admin approval system</p>
+                <p><strong>Communications:</strong><br>
+                - Essential account notifications and security alerts<br>
+                - Service updates and policy changes<br>
+                - Optional community newsletters and featured content highlights<br>
+                - Response to user inquiries and customer support</p>
+                <p><strong>Platform Improvement:</strong><br>
+                - Analytics to understand user preferences and platform usage<br>
+                - Feature development based on community needs<br>
+                - Security monitoring and fraud prevention</p>
+
+                <h6>4. Information Sharing and Disclosure</h6>
+                <p>We respect your privacy and do not sell, rent, or trade your personal information. We may share information only in these limited circumstances:</p>
+                <p><strong>With Your Explicit Consent:</strong> We will ask for your permission before sharing personal information for purposes not covered in this policy.</p>
+                <p><strong>Trusted Service Providers:</strong> We work with carefully vetted third-party companies for:<br>
+                - Website hosting and cloud storage services<br>
+                - Email delivery and communication tools<br>
+                - Analytics and performance monitoring<br>
+                - Payment processing (if applicable)<br>
+                All service providers are bound by strict confidentiality agreements and may only use your information to provide services on our behalf.</p>
+                <p><strong>Legal Requirements:</strong> We may disclose information when required by law, court order, or to protect the rights, property, or safety of Tasty Hub, our users, or others.</p>
+                <p><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, user information may be transferred as part of the business transaction, with continued protection under this privacy policy.</p>
+
+                <h6>5. Data Security and Protection</h6>
+                <p>We implement comprehensive security measures to protect your personal information:</p>
+                <p><strong>Technical Safeguards:</strong><br>
+                - SSL encryption for all data transmission<br>
+                - Secure database storage with access controls<br>
+                - Regular security audits and vulnerability assessments<br>
+                - Automated backup systems with encryption</p>
+                <p><strong>Administrative Safeguards:</strong><br>
+                - Limited employee access to personal data on a need-to-know basis<br>
+                - Regular security training for staff<br>
+                - Incident response procedures for potential breaches</p>
+                <p>While we employ industry-standard security measures, no internet transmission or electronic storage is 100% secure. We encourage users to use strong passwords and keep login credentials confidential.</p>
+
+                <h6>6. Your Privacy Rights</h6>
+                <p>You have comprehensive control over your personal information and can exercise the following rights at any time:</p>
+                <p><strong>Access Rights:</strong> Request a copy of all personal information we hold about you, including how it's used and shared.</p>
+                <p><strong>Correction Rights:</strong> Update or correct any inaccurate personal information in your profile or account settings.</p>
+                <p><strong>Deletion Rights:</strong> Request complete account deletion, which will remove all personal information and user-generated content from our systems within 30 days.</p>
+                <p><strong>Data Portability:</strong> Request your data in a machine-readable format for transfer to another service.</p>
+                <p><strong>Communication Preferences:</strong> Opt out of non-essential communications while maintaining account functionality.</p>
+                <p>To exercise these rights, contact us at <a href="mailto:tastyhubrecipe@gmail.com" class="text-primary hover:underline">tastyhubrecipe@gmail.com</a> with your request and account information.</p>
+
+                <h6>7. Data Retention</h6>
+                <p>We retain your information only as long as necessary to provide services and fulfill legal obligations:</p>
+                <p>- <strong>Active Accounts:</strong> Information is retained while your account remains active<br>
+                - <strong>Deleted Accounts:</strong> Personal information is deleted within 30 days of account closure<br>
+                - <strong>Legal Requirements:</strong> Some information may be retained longer to comply with legal obligations or resolve disputes</p>
+
+                <h6>8. International Data Transfers</h6>
+                <p>Tasty Hub operates primarily in the Philippines. If you access our services from other countries, your information may be transferred to and processed in the Philippines, where our servers and primary operations are located. We ensure appropriate safeguards are in place for any international transfers.</p>
+
+                <h6>9. Children's Privacy</h6>
+                <p>Tasty Hub is designed for users of all ages. However, we do not knowingly collect personal information from children under 13 without parental consent. If you believe a child has provided personal information without consent, please contact us immediately.</p>
+
+                <h6>10. Changes to This Privacy Policy</h6>
+                <p>We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. Significant changes will be communicated through:</p>
+                <p>- Email notification to registered users<br>
+                - Prominent notice on our website<br>
+                - Updated effective date at the top of this policy</p>
+                <p>Your continued use of Tasty Hub after changes take effect constitutes acceptance of the updated policy.</p>
+
+                <h6>11. Contact Information</h6>
+                <p>For questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:tastyhubrecipe@gmail.com" class="text-primary hover:underline">tastyhubrecipe@gmail.com</a><br>
+                <strong>Subject Line:</strong> Privacy Policy Inquiry<br>
+                <strong>Response Time:</strong> We aim to respond to all privacy-related inquiries within 48 hours.</p>
+        </div>
+
+        <!-- Terms Tab -->
+        <div class="tab-pane fade" id="terms" role="tabpanel" aria-labelledby="terms-tab">
+          <h6 class="text-muted">Effective Date: April 10, 2025</h6>
+                <p>Welcome to Tasty Hub, a community-driven recipe-sharing website where users can discover, create, and share their own recipes. By accessing or using Tasty Hub, you agree to comply with and be bound by these Terms and Conditions. If you do not agree with any part of these Terms, you must not use our services.</p>
+                
+                <h6>1. User Eligibility and Account Creation</h6>
+                <p><strong>General Eligibility:</strong> Tasty Hub welcomes all users who share a passion for food and cooking. Our platform is especially designed for food enthusiasts who want to contribute to and learn from our vibrant culinary community.</p>
+                <p><strong>Account Requirements:</strong><br>
+                - Users must provide accurate and truthful information during registration<br>
+                - Each user is limited to one account to maintain community integrity<br>
+                - Users under 13 require parental consent to create an account<br>
+                - Account holders are responsible for maintaining the security of their login credentials</p>
+                <p><strong>Account Termination:</strong> We reserve the right to suspend or terminate accounts that violate these terms, engage in fraudulent activity, or compromise the safety and integrity of our community.</p>
+                
+                <h6>2. User Responsibilities and Community Standards</h6>
+                <p>As a valued member of the Tasty Hub community, you agree to uphold our standards and contribute positively to the platform:</p>
+                <p><strong>Content Integrity:</strong><br>
+                - Provide accurate, original, and truthful information in all recipe submissions<br>
+                - Ensure recipes are tested and safe for consumption<br>
+                - Include proper attribution when adapting recipes from other sources<br>
+                - Avoid submitting duplicate or spam content</p>
+                <p><strong>Prohibited Activities:</strong><br>
+                - Engaging in misinformation, plagiarism, or deceptive practices<br>
+                - Harassing, threatening, discriminating against, or abusing other users<br>
+                - Posting content that is illegal, harmful, or violates intellectual property rights<br>
+                - Attempting to circumvent our content moderation systems<br>
+                - Using automated tools or bots to create accounts or submit content</p>
+                <p><strong>Community Interaction:</strong><br>
+                - Treat all community members with respect and courtesy<br>
+                - Provide constructive feedback and helpful suggestions<br>
+                - Report inappropriate content or behavior to our moderation team<br>
+                - Respect cultural diversity in cooking styles and dietary preferences</p>
+                <p><strong>Legal Compliance:</strong> Users must comply with all applicable local, national, and international laws while using our services.</p>
+                
+                <h6>3. User-Generated Content and Licensing</h6>
+                <p><strong>Content Ownership:</strong> You retain full ownership and copyright of all original content you submit to Tasty Hub, including recipes, images, videos, and written descriptions.</p>
+                <p><strong>Platform License:</strong> By submitting content, you grant Tasty Hub a non-exclusive, worldwide, royalty-free, transferable license to:</p>
+                <p>- Use, reproduce, modify, adapt, and display your content on our platform<br>
+                - Distribute your content through our website, mobile applications, and related services<br>
+                - Create derivative works for promotional and marketing purposes<br>
+                - Include your content in compilations, cookbooks, or other publications</p>
+                <p><strong>Future Commercial Use:</strong> We may feature selected community recipes in printed cookbooks, digital publications, or promotional materials. Contributors will be notified in advance and receive appropriate credit. For commercial publications, we may offer compensation or revenue sharing.</p>
+                <p><strong>Content Removal:</strong> You may delete your content at any time through your account settings. However, content that has been shared, republished, or incorporated into derivative works may continue to exist.</p>
+                
+                <h6>4. Content Monitoring, Moderation, and Approval Process</h6>
+                <p><strong>Quality Assurance:</strong> Tasty Hub employs a comprehensive admin approval system to ensure all user-generated content meets our quality standards before publication. This process helps maintain the integrity and safety of our culinary community.</p>
+                <p><strong>Review Process:</strong><br>
+                - All submitted recipes undergo initial automated screening for obvious violations<br>
+                - Content is then reviewed by our moderation team within 24-48 hours<br>
+                - Recipes are evaluated for accuracy, safety, clarity, and community guidelines compliance<br>
+                - Approved content is published and becomes visible to the community</p>
+                <p><strong>Content Standards:</strong> Submissions must meet the following criteria:<br>
+                - Clear, complete ingredient lists with accurate measurements<br>
+                - Step-by-step instructions that are easy to follow<br>
+                - Safe cooking methods and food handling practices<br>
+                - Appropriate images that represent the actual recipe<br>
+                - Original content or properly attributed adaptations</p>
+                <p><strong>Rejection and Appeals:</strong> If content is rejected, you will receive notification with specific reasons. Rejected content will appear in your profile's "Declined" section. You may revise and resubmit content or appeal the decision by contacting our support team.</p>
+                
+                <h6>5. Intellectual Property Rights and Protection</h6>
+                <p><strong>Tasty Hub Property:</strong> All platform elements including but not limited to website design, software, logos, trademarks, graphics, and proprietary features are the exclusive property of Tasty Hub and protected by copyright, trademark, and other intellectual property laws.</p>
+                <p><strong>User Content Rights:</strong> While users retain ownership of their submitted recipes, they grant Tasty Hub the licensing rights outlined in Section 3. Users are responsible for ensuring they have the right to submit and license any content they share.</p>
+                <p><strong>Third-Party Content:</strong> Users must respect the intellectual property rights of others. Submission of copyrighted material without permission is strictly prohibited and may result in account suspension or termination.</p>
+                <p><strong>DMCA Compliance:</strong> We respond promptly to valid copyright infringement notices. Rights holders may report violations through our designated copyright agent contact information.</p>
+                
+                <h6>6. Limitation of Liability and Disclaimers</h6>
+                <p><strong>Platform Disclaimer:</strong> Tasty Hub provides a platform for sharing recipes and culinary information. We do not guarantee the accuracy, completeness, safety, or reliability of any user-generated content. Users follow recipes and cooking advice at their own risk.</p>
+                <p><strong>Health and Safety:</strong> We strongly encourage users to:<br>
+                - Consider food allergies and dietary restrictions when trying new recipes<br>
+                - Follow proper food safety and handling procedures<br>
+                - Consult healthcare providers for specific dietary needs or health conditions<br>
+                - Use common sense and cooking experience when interpreting recipes</p>
+                <p><strong>Limitation of Liability:</strong> To the fullest extent permitted by law, Tasty Hub shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the platform or any user-generated content. Our total liability shall not exceed the amount paid by you (if any) for using our services.</p>
+                <p><strong>Service Availability:</strong> While we strive for continuous service, we do not guarantee uninterrupted access to Tasty Hub. The platform may be temporarily unavailable due to maintenance, updates, or technical issues.</p>
+                
+                <h6>7. Privacy and Data Protection</h6>
+                <p>Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference. By using Tasty Hub, you consent to our data practices as described in the Privacy Policy.</p>
+                
+                <h6>8. Dispute Resolution and Governing Law</h6>
+                <p><strong>Governing Law:</strong> These Terms and Conditions are governed by the laws of the Republic of the Philippines, without regard to conflict of law principles.</p>
+                <p><strong>Dispute Resolution:</strong> Any disputes arising from these terms or your use of Tasty Hub will be resolved through:<br>
+                1. Direct communication with our support team<br>
+                2. Mediation if direct resolution is unsuccessful<br>
+                3. Binding arbitration in the Philippines as a final resort</p>
+                <p><strong>Class Action Waiver:</strong> You agree to resolve disputes individually and waive the right to participate in class action lawsuits.</p>
+                
+                <h6>9. Modifications to Terms and Service</h6>
+                <p><strong>Terms Updates:</strong> Tasty Hub reserves the right to modify these Terms and Conditions at any time to reflect changes in our services, legal requirements, or business practices.</p>
+                <p><strong>Notification Process:</strong> Significant changes will be communicated through:<br>
+                - Email notification to registered users at least 30 days in advance<br>
+                - Prominent notice on our website homepage<br>
+                - Updated effective date at the top of these Terms</p>
+                <p><strong>Acceptance:</strong> Your continued use of Tasty Hub after changes take effect constitutes acceptance of the modified Terms. If you disagree with changes, you may terminate your account before the effective date.</p>
+                <p><strong>Service Modifications:</strong> We may modify, suspend, or discontinue any aspect of our services at any time. We will provide reasonable notice for significant service changes that materially affect user experience.</p>
+                
+                <h6>10. Account Termination and Data Retention</h6>
+                <p><strong>Voluntary Termination:</strong> You may delete your account at any time through your account settings. Upon deletion, your personal information will be removed within 30 days, though some content may remain for legal or operational purposes.</p>
+                <p><strong>Involuntary Termination:</strong> We may suspend or terminate accounts that violate these Terms, engage in harmful behavior, or compromise platform security. Terminated users will receive notification with specific reasons when possible.</p>
+                <p><strong>Data Retention:</strong> After account termination, we may retain certain information as required by law, for fraud prevention, or to resolve disputes. Retained data is subject to our Privacy Policy.</p>
+                
+                <h6>11. Severability and Entire Agreement</h6>
+                <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect. These Terms, along with our Privacy Policy, constitute the entire agreement between you and Tasty Hub regarding your use of our services.</p>
+                
+                <h6>12. Contact Information and Support</h6>
+                <p>For questions, concerns, or support regarding these Terms and Conditions or any aspect of Tasty Hub services, please contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:tastyhubrecipe@gmail.com" class="text-primary hover:underline">tastyhubrecipe@gmail.com</a><br>
+                <strong>Subject Line:</strong> Terms and Conditions Inquiry<br>
+                <strong>Response Time:</strong> We aim to respond to all inquiries within 24-48 hours<br>
+                <strong>Business Hours:</strong> Monday-Friday, 9:00 AM - 6:00 PM (Philippine Standard Time)</p>
+                <p>Thank you for being part of the Tasty Hub community. We're excited to share this culinary journey with you!</p>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+<script>
+  // Automatically switch to correct tab when clicked from footer
+  const legalModal = document.getElementById('legalModal');
+  legalModal.addEventListener('show.bs.modal', function (event) {
+    const button = event.relatedTarget;
+    const tab = button.getAttribute('data-tab');
+
+    if (tab === "terms") {
+      const termsTab = new bootstrap.Tab(document.querySelector('#terms-tab'));
+      termsTab.show();
+    } else {
+      const privacyTab = new bootstrap.Tab(document.querySelector('#privacy-tab'));
+      privacyTab.show();
+    }
+  });
+</script>
+
+<script> 
+       //Switch Modal
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("switchToSignIn").addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default link action
+                
+                var registerModal = document.getElementById("registerModal");
+                var signInModal = new bootstrap.Modal(document.getElementById("signInModal"));
+
+                // Hide register modal first
+                var registerModalInstance = bootstrap.Modal.getInstance(registerModal);
+                registerModalInstance.hide();
+
+                // Wait for the register modal to fully close, then show sign-in modal
+                registerModal.addEventListener("hidden.bs.modal", function () {
+                    signInModal.show();
+                }, { once: true }); // Ensures this runs only once per click
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("switchToSignUp").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            var signInModal = document.getElementById("signInModal");
+            var signUpModal = new bootstrap.Modal(document.getElementById("registerModal"));
+
+            // Hide Sign In modal first
+            var signInModalInstance = bootstrap.Modal.getInstance(signInModal);
+            signInModalInstance.hide();
+
+            // Wait for the Sign In modal to fully close, then open Sign Up modal
+            signInModal.addEventListener("hidden.bs.modal", function () {
+                signUpModal.show();
+            }, { once: true }); // Runs only once per click
+        });
+    });
+    
+</script>  
+
+<script>
+    $(document).ready(function() {
+        $('#feedbackForm').on('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            $.ajax({
+                url: $(this).attr('action'), // Use the form's action attribute
+                type: $(this).attr('method'), // Use the form's method attribute
+                data: $(this).serialize(), // Serialize the form data
+                success: function(response) {
+                    // Assuming the server returns a success message
+                    $('#feedbackMessage').text('Thank you for your feedback!').show();
+                    $('#feedbackForm')[0].reset(); // Reset the form fields
+                },
+                error: function() {
+                    $('#feedbackMessage').text('There was an error submitting your feedback. Please try again.').show();
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
