@@ -13,12 +13,14 @@ Tasty Hub is a web application that allows users to discover, share, and engage 
 - Livestream – Stream live cooking sessions for other users to watch and interact.
 
 🛠 Technology Used
-Frontend: HTML, CSS, JavaScript
-Backend: PHP
-Database: MySQL
-Responsive Design: Works on desktop and mobile browsers
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP
+- Database: MySQL
+- Responsive Design: Works on desktop and mobile browsers
 
 📸 Screenshots
+
+
 ![Screenshot_24-11-2025_212640_docs google com](https://github.com/user-attachments/assets/0e20d575-95be-44a4-8748-657fa6b49316)
 ![Screenshot_24-11-2025_21275_docs google com](https://github.com/user-attachments/assets/9d16d7f2-b629-4f2d-9ac6-3b413b5926ff)
 ![Screenshot_24-11-2025_212730_docs google com](https://github.com/user-attachments/assets/276bffa5-6523-4216-bab8-764b8bcbb604)
